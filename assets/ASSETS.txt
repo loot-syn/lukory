@@ -1,0 +1,25 @@
+LUKORY (루코리) asset notes
+Version 2.0 · 2026-10-09 (Asia/Seoul)
+
+faces-editorial-contact-sheet.png
+Original AI-generated artwork created for this website on 2026-10-09 (Asia/Seoul).
+One image generation, six entirely fictional adult portraits, 3 columns x 2 rows.
+The source image is preserved without pixel editing; CSS crops the appropriate cell for display.
+Image dimensions: 1374 x 1145 pixels.
+No real person, celebrity, or existing photo was used as a reference.
+
+lukory-sans.woff2
+Based on Noto Sans KR [wght], downloaded from the official Google Fonts repository.
+Source: https://github.com/google/fonts/tree/main/ofl/notosanskr
+Font file: https://raw.githubusercontent.com/google/fonts/main/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf
+The font was subset to Latin, Hangul, punctuation, symbols and full-width forms, then WOFF2 compressed.
+The original variable weight axis is retained. Used locally under the CSS family alias LukorySans.
+License: SIL Open Font License 1.1, included in OFL-NotoSansKR.txt.
+
+Functional icons
+Simple inline SVG paths and Unicode symbols; no external icon library or requests.
+
+Brand name
+LUKORY (루코리) is a coined name combining look and story: six Latin letters and three Korean syllables.
+Its intended meaning is '얼굴 하나에서 시작되는 이야기' — a story beginning with a face.
+The name expresses the community's shared first impressions and stories about faces.

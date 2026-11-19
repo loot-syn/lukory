@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f65b35" />
+    <meta
+      name="description"
+      content="AI가 만든 얼굴, 우리가 붙이는 첫인상. 질문에 답하고, 새로운 얼굴을 만나고, 당신만의 이야기를 남겨보세요. LUKORY, 루코리."
+    />
+    <meta
+      property="og:title"
+      content="LUKORY — 얼굴은 하나, 이야기는 무한히."
+    />
+    <meta
+      property="og:description"
+      content="질문에서 태어난 얼굴에, 당신의 첫인상을 더해보세요."
+    />
+    <meta property="og:type" content="website" />
+    <title>LUKORY — 얼굴은 하나, 이야기는 무한히.</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23f65b35'/%3E%3Cpath d='M22 14h10v31h13v9H22z' fill='%23171717'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./data.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#feed">얼굴 피드로 건너뛰기</a>
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="LUKORY 홈"
+        >lukory<span class="logo-dot">.</span></a
+      >
+      <nav aria-label="주 메뉴">
+        <a class="nav-link active" href="#feed">발견하기</a>
+        <button class="nav-link" type="button" data-action="about">
+          루코리 이야기
+        </button>
+      </nav>
+      <div class="header-right">
+        <span class="edition-label">THE FIRST IMPRESSION CLUB</span
+        ><button
+          class="button button-dark button-small"
+          type="button"
+          data-action="create"
+        >
+          <span aria-hidden="true">＋</span> 내 얼굴 만들기
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro section-wrap" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <div class="eyebrow">
+            <span class="mini-star" aria-hidden="true">✳</span> A LOOK. A
+            THOUSAND STORIES.
+          </div>
+          <h1 id="intro-title">
+            얼굴은 하나,<br />이야기는
+            <span class="underline-word"
+              >무한히<span class="scribble" aria-hidden="true"></span></span
+            ><span class="orange">.</span>
+          </h1>
+          <p class="intro-description">
+            AI가 만든 얼굴, 우리가 붙이는 첫인상.<br />낯선 얼굴에 당신만의
+            이야기를 더해보세요.
+          </p>
+          <div class="intro-caption">
+            <span class="capsule">100% FICTIONAL</span
+            ><span>존재하지 않는 얼굴. 정답 없는 관상.</span>
+          </div>
+        </div>
+        <div class="question-teaser">
+          <div class="teaser-top">
+            <span class="eyebrow">YOUR FACE STARTS HERE</span
+            ><span class="teaser-counter">01 / 05</span>
+          </div>
+          <h2>처음 만난 사람에게<br />어떤 느낌으로 기억되고 싶나요?</h2>
+          <div
+            class="teaser-options"
+            role="group"
+            aria-label="첫 번째 질문의 답변"
+          >
+            <button type="button" data-action="begin-answer" data-answer="0">
+              <span aria-hidden="true">☀</span> 다정한 온기
+            </button>
+            <button type="button" data-action="begin-answer" data-answer="1">
+              <span aria-hidden="true">✧</span> 조용한 신비
+            </button>
+            <button type="button" data-action="begin-answer" data-answer="2">
+              <span aria-hidden="true">⌁</span> 자유로운 감각
+            </button>
+            <button type="button" data-action="begin-answer" data-answer="3">
+              <span aria-hidden="true">◇</span> 선명한 존재감
+            </button>
+          </div>
+          <div class="teaser-footer">
+            <span>다섯 가지 답으로 만나는 새로운 얼굴</span
+            ><span class="demo-pill">DEMO</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span class="ticker-segment"
+            >EVERY FACE TELLS A STORY <span class="ticker-star">✳</span> WHAT'S
+            YOUR FIRST IMPRESSION? <span class="ticker-star">✳</span> EVERY FACE
+            TELLS A STORY <span class="ticker-star">✳</span> WHAT'S YOUR FIRST
+            IMPRESSION? <span class="ticker-star">✳</span></span
+          ><span class="ticker-segment"
+            >EVERY FACE TELLS A STORY <span class="ticker-star">✳</span> WHAT'S
+            YOUR FIRST IMPRESSION? <span class="ticker-star">✳</span> EVERY FACE
+            TELLS A STORY <span class="ticker-star">✳</span> WHAT'S YOUR FIRST
+            IMPRESSION? <span class="ticker-star">✳</span></span
+          >
+        </div>
+      </div>
+
+      <section
+        class="feed-section section-wrap"
+        id="feed"
+        aria-labelledby="feed-title"
+      >
+        <div class="feed-heading">
+          <div>
+            <p class="eyebrow">MEET YOUR NEXT IMPRESSION</p>
+            <h2 id="feed-title">이 얼굴, <span>어떤 느낌?</span></h2>
+          </div>
+          <span class="sample-note"
+            ><span class="sample-symbol" aria-hidden="true">◌</span> 상상의 얼굴
+            · 샘플 커뮤니티</span
+          >
+        </div>
+        <div class="feed-toolbar">
+          <div class="filter-list" role="group" aria-label="분위기로 얼굴 보기">
+            <button
+              type="button"
+              class="filter-chip selected"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              모든 얼굴 <span id="face-count">06</span>
+            </button>
+            <button
+              type="button"
+              class="filter-chip"
+              data-filter="warm"
+              aria-pressed="false"
+            >
+              다정한 온기
+            </button>
+            <button
+              type="button"
+              class="filter-chip"
+              data-filter="mystery"
+              aria-pressed="false"
+            >
+              조용한 신비
+            </button>
+            <button
+              type="button"
+              class="filter-chip"
+              data-filter="free"
+              aria-pressed="false"
+            >
+              자유로운 감각
+            </button>
+            <button
+              type="button"
+              class="filter-chip"
+              data-filter="bold"
+              aria-pressed="false"
+            >
+              선명한 존재감
+            </button>
+          </div>
+          <label class="sort-label"
+            ><span class="sr-only">얼굴 정렬</span
+            ><select id="sort-select">
+              <option value="popular">인기순</option>
+              <option value="newest">최신순</option>
+              <option value="comments">댓글 많은 순</option>
+            </select></label
+          >
+        </div>
+        <div
+          class="face-grid"
+          id="face-grid"
+          aria-live="polite"
+          aria-label="얼굴 피드"
+        ></div>
+        <noscript
+          ><p class="noscript-notice">
+            질문과 얼굴 피드, 댓글을 이용하려면 브라우저에서 JavaScript를
+            켜주세요.
+          </p></noscript
+        >
+        <div class="feed-end">
+          <span class="end-line"></span
+          ><span>모든 얼굴의 다음 이야기는, 당신에게.</span
+          ><span class="end-line"></span>
+        </div>
+      </section>
+
+      <section class="create-band section-wrap" aria-labelledby="create-title">
+        <div>
+          <p class="eyebrow">NOT A SELFIE. A NEW POSSIBILITY.</p>
+          <h2 id="create-title">당신의 답은<br />어떤 얼굴이 될까요?</h2>
+        </div>
+        <div class="create-band-right">
+          <p>
+            사진 대신 다섯 가지 질문.<br />아직 만나지 못한 인상을 꺼내보세요.
+          </p>
+          <button class="button button-dark" type="button" data-action="create">
+            <span class="spark-icon" aria-hidden="true">✳</span> 내 얼굴 만들기</button
+          ><span class="band-small">약 1분 · 가입 없이 데모 체험</span>
+        </div>
+        <span class="band-asterisk" aria-hidden="true">✳</span>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <div class="footer-top">
+        <a class="wordmark" href="#" aria-label="LUKORY 홈"
+          >lukory<span class="logo-dot">.</span></a
+        >
+        <p>같은 얼굴, 다른 이야기.<br />첫인상을 나누는 작은 클럽.</p>
+        <button class="text-button" type="button" data-action="about">
+          루코리의 이야기
+        </button>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 LUKORY. MADE OF IMAGINATION.</span>
+        <p>
+          등장하는 얼굴은 AI로 만든 가상 인물입니다. 관상은 가볍게 즐기는 상상의
+          이야기예요.
+        </p>
+        <button
+          class="text-button subtle"
+          type="button"
+          data-action="demo-info"
+        >
+          데모 안내
+        </button>
+      </div>
+    </footer>
+
+    <dialog
+      id="studio-dialog"
+      class="studio-dialog"
+      aria-labelledby="studio-dialog-title"
+    >
+      <div id="studio-content"></div>
+    </dialog>
+    <dialog
+      id="face-dialog"
+      class="face-dialog"
+      aria-labelledby="face-dialog-title"
+    >
+      <div id="face-content"></div>
+    </dialog>
+    <dialog
+      id="info-dialog"
+      class="info-dialog"
+      aria-labelledby="info-dialog-title"
+    >
+      <div id="info-content"></div>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>
